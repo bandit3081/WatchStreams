@@ -8,7 +8,7 @@
 
         <Button x:Name="startBtn" Content="Start Stream" Margin="10,24,0,0" Click="OpenStream" HorizontalAlignment="Left" Width="85" Height="47" VerticalAlignment="Top"/>
         <TextBox x:Name="streamerID" HorizontalAlignment="Left" Height="25" Margin="10,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
-        <ListBox x:Name="streamerlistbox" Margin="105,24,10,108" SelectedIndex="0"/>
+        <ListBox x:Name="streamerlistbox" Margin="105,24,10,108" SelectedIndex="0" MouseDoubleClick="streamerlistbox_MouseDoubleClick"/>
         <Button x:Name="addBtn" Content="Add" Margin="10,116,0,0" Click="addToList" HorizontalAlignment="Left" Width="85" Height="27" VerticalAlignment="Top"/>
         <Button x:Name="removeBtn" Content="Remove" Margin="10,148,0,0" Click="removeFromList" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="85"/>
         <TextBox x:Name="consoleBox" Margin="10,252,6,10" TextWrapping="Wrap" IsReadOnly="True" Background="#FF919191"/>

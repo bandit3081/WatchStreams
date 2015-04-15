@@ -173,5 +173,20 @@ namespace WatchStreams
             Chat chatwindow = new Chat();
             chatwindow.Show();
         }
+
+        private void streamerlistbox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            DependencyObject obj = (DependencyObject)e.OriginalSource;
+
+            while (obj != null && obj != streamerlistbox)
+            {
+                if (obj.GetType() == typeof(ListBoxItem))
+                {
+                    OpenCMD();
+                    break;
+                }
+                obj = VisualTreeHelper.GetParent(obj);
+            }
+        }
     }
 }
