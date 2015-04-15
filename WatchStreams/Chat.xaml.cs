@@ -18,7 +18,12 @@ namespace WatchStreams
 {
     /// <summary>
     /// Interaction logic for Chat.xaml
+    /// 
+    /// Rough layout
+    /// 
     /// </summary>
+    /// 
+
     public partial class Chat : Window
     {
         public Chat()
